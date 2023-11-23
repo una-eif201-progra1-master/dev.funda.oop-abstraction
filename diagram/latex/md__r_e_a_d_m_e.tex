@@ -1,0 +1,43 @@
+\chapter{Abstraction}
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Abstraction@{Abstraction}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+ \href{https://mikeguzman.dev/software-development/programming-fundations/object-oriented-programming/}{\texttt{ https\+://mikeguzman.\+dev/software-\/development/programming-\/fundations/object-\/oriented-\/programming/}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ ++}
+\DoxyCodeLine{\textcolor{comment}{//\ Example\ of\ Abstraction}}
+\DoxyCodeLine{\textcolor{keyword}{class\ }AbstractEmployee\ \{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ askForPromotion()\ =\ 0;\ \textcolor{comment}{//\ Pure\ Virtual\ Function}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class\ }Employee:\ AbstractEmployee\ \{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{string}\ Name;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{string}\ Company;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{int}\ Age;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{void}\ askForPromotion()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(Age\ >\ 30)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ Name\ <<\ \textcolor{stringliteral}{"{}\ got\ promoted!"{}}\ <<\ endl;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ Name\ <<\ \textcolor{stringliteral}{"{},\ sorry\ no\ promotion\ for\ you."{}}\ <<\ endl;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ ...\ Constructors,\ Getters\ and\ Setters}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ main()\ \{}
+\DoxyCodeLine{\ \ \ \ Employee\ employee1\ =\ Employee(\textcolor{stringliteral}{"{}John"{}},\ \textcolor{stringliteral}{"{}Apple"{}},\ 35);}
+\DoxyCodeLine{\ \ \ \ employee1.askForPromotion();\ \ \textcolor{comment}{//\ Output:\ John\ got\ promoted!}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+In this example, {\ttfamily Abstract\+Employee} provides an abstract base class with a pure virtual function {\ttfamily ask\+For\+Promotion()}. The {\ttfamily Employee} class implements this method. This abstraction allows different types of employees to implement their own promotion logic.
+
+These examples demonstrate the core principles of OOP in C++. Keep in mind that these are simplified examples for illustration and in a real-\/world application, these concepts are often used in more complex ways. 

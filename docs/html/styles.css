@@ -1,0 +1,14 @@
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.social-media-links a {
+    margin: 0 10px;
+}
+
+.social-media-links img {
+    width: 30px; /* Adjust as per your preference */
+    height: 30px; /* Adjust as per your preference */
+}

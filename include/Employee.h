@@ -11,6 +11,11 @@
 #include "AbstractEmployee.h"
 using namespace std;
 
+/*!
+ * \class Employee
+ * \file Employee.h
+ * \brief The Employee class represents an employee.
+ */
 class Employee: AbstractEmployee {
 private:
     string Name;
@@ -50,8 +55,6 @@ public:
     void setAge(int age) {
         Age = age;
     }
-
-    // ... Constructors, Getters and Setters
 };
 
 

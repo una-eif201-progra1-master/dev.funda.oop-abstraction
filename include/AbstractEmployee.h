@@ -5,7 +5,12 @@
 #ifndef DEV_FUNDA_OOP_ABSTRACTION_ABSTRACTEMPLOYEE_H
 #define DEV_FUNDA_OOP_ABSTRACTION_ABSTRACTEMPLOYEE_H
 
-// Example of Abstraction
+/*!
+ * \class AbstractEmployee
+ * \file  AbstractEmployee.h
+ * \brief The AbstractEmployee class represents an abstract employee.
+ */
+
 class AbstractEmployee {
     virtual void askForPromotion() = 0; // Pure Virtual Function
 };
